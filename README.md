@@ -1,6 +1,6 @@
 # ShuffleNet_v1
 This repository is an Pytorch implementation of ShuffleNet_v1.
-The original articles: [ShuffleNet_v1](https://arxiv.org/pdf/1707.01083.pdf)
+The original article: [ShuffleNet_v1](https://arxiv.org/pdf/1707.01083.pdf)
 
 ## Environments
 * Python 3.5.2
