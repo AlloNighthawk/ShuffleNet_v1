@@ -11,7 +11,7 @@ n_groups = 2
 
 transform = transforms.Compose([transforms.Pad(96), transforms.ToTensor()])
 
-train_set = tv.datasets.CIFAR10(root='../dataset/', train=True, download=False, transform=transform)
+train_set = tv.datasets.CIFAR10(root='../dataset/', train=True, download=True, transform=transform)
 test_set = tv.datasets.CIFAR10(root='../dataset/', train=False, transform=transforms.ToTensor())
 
 train_loader = torch.utils.data.DataLoader(dataset=train_set, batch_size=batch_size, shuffle=True)
