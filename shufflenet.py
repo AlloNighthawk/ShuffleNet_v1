@@ -59,11 +59,11 @@ class ShuffleUnit(nn.Module):
             return torch.cat((residual, x), 1)
 
 class ShuffleNet(nn.Module):
-    def __init__(self, n_groups):
+    def __init__(self, n_groups, n_classes):
         super(ShuffleNet, self).__init__()
         self.in_chans = 3
         self.n_groups = n_groups
-        self.n_classes = 1000
+        self.n_classes = n_classes
 
         self.conv1 = conv3x3(self.in_chans, 24, 2)
         self.maxpool = nn.MaxPool2d(3, 2, 1)
